@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> Index </title>
+</head>
+
+<body class="body_light">
+    <header>
+        <nav class="links">
+            <div>
+                <ul>
+                    <li>
+                        <a href="mailto:caio.ribeiro98@outlook.com" class="contact">Contact us</a>
+                    </li>
+                    <li>
+                        <div class="light_container">
+                            <span onclick="foo_theme()" class="material-icons" id="light_on">
+                            light_mode
+                        </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <form>
+            <div class="container1">
+                <h1> Welcome Back </h1>
+
+                <div class="container2">
+                    <label for="member_username">Username</label>
+                    <input type="text" placeholder="Ex:Antony_90@gmail.com" class="name">
+                </div>
+
+                <div class="container3">
+                    <label for="member_password">Password</label>
+                    <input onload="remember_me()" type="password" placeholder="**********" class="password">
+                    <span onclick="show_password()" class="material-icons" id="visibility_icons">
+                        visibility_off
+                    </span>
+                </div>
+
+                <div class="container4">
+                    <label for="remember_me" class="input_radio_label">
+                        <input onload="remember_me()" type="checkbox" name="remember_me" class="check">
+                        Remember - me
+                    </label> <br>
+                    <button onclick="save_user()" type="button">Sign In</button>
+                </div>
+            </div>
+        </form>
+
+    </main>
+
+</body>
+<script src="index.js"></script>
+
+</html>
