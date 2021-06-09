@@ -49,14 +49,6 @@
             margin-left: 20px;
         }
         
-        .links li a {
-            color: var(--main-color);
-            font-weight: 300;
-            font-size: 100%;
-            font-size: 1.25rem;
-            position: relative;
-        }
-        
         .contact::after {
             content: "";
             width: 0;
@@ -103,25 +95,12 @@
             cursor: pointer;
         }
         
-        #dark_on {
-            color: yellow;
-            transition: 1.2s;
-            transform: translateX(150%);
-            cursor: pointer;
-        }
-        
         .container1 {
             margin: 45px auto;
             display: grid;
             grid-template-columns: 1fr;
             justify-items: start;
             width: 640px;
-        }
-        
-        .container1 h1 {
-            font-family: 'Overpass', sans-serif;
-            font-weight: 800;
-            font-size: 2.25rem;
         }
         
         .container2 {
@@ -141,6 +120,10 @@
         
         @media only screen and (max-width: 600px) {
             .links li a {
+                color: var(--main-color);
+                font-weight: 300;
+                font-size: 100%;
+                position: relative;
                 font-size: 1rem;
             }
             #dark_on {
@@ -154,6 +137,8 @@
                 width: 55px;
             }
             .container1 h1 {
+                font-family: 'Overpass', sans-serif;
+                font-weight: 800;
                 font-size: 1.8rem;
             }
             .container2 label,
@@ -175,6 +160,24 @@
         }
         
         @media only screen and (min-width: 600px) {
+            .links li a {
+                color: var(--main-color);
+                font-weight: 300;
+                font-size: 100%;
+                font-size: 1.25rem;
+                position: relative;
+            }
+            #dark_on {
+                color: yellow;
+                transition: 1.2s;
+                transform: translateX(150%);
+                cursor: pointer;
+            }
+            .container1 h1 {
+                font-family: 'Overpass', sans-serif;
+                font-weight: 800;
+                font-size: 2.25rem;
+            }
             .container3 span {
                 width: 30px;
                 position: relative;
