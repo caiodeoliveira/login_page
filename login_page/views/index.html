@@ -139,6 +139,34 @@
             margin: 16px 0;
         }
         
+        @media only screen and (max-width: 600px) {
+            .links li a {
+                font-size: 1rem;
+            }
+            #dark_on {
+                color: yellow;
+                transition: 1.2s;
+                transform: translateX(100%);
+                cursor: pointer;
+            }
+            .light_container,
+            .dark_container {
+                width: 55px;
+            }
+            .container1 h1 {
+                font-size: 1.8rem;
+            }
+            .container2 label,
+            .container3 label {
+                font-size: 1.5rem;
+            }
+            .container2 input,
+            .container3 input,
+            button {
+                max-width: 350px;
+            }
+        }
+        
         .container2 input {
             font-family: 'Nunito', sans-serif;
             font-weight: 400;
@@ -159,7 +187,6 @@
             width: 477px;
             font-family: 'Nunito', sans-serif;
             font-weight: 600;
-            font-size: 1.75rem;
         }
         
         .container3 label {
